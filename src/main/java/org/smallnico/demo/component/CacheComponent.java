@@ -7,13 +7,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.annotation.PostConstruct;
-
-import org.nico.ourbatis.autoconfigure.OurbatisAutoConfiguration;
 import org.smallnico.demo.domain.User;
 import org.smallnico.demo.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.SmartLifecycle;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -27,6 +23,7 @@ public class CacheComponent implements Map<Integer, User>, SmartLifecycle{
     @Autowired
     private UserMapper userMapper;
     
+    //Map代替缓存中间件
     private Map<Integer, User> cache = new ConcurrentHashMap<Integer, User>();
 
     private BloomFilter<Integer> bloomFilter = BloomFilter.create(Funnels.integerFunnel(), 1000 * 10000, 0.0001F);
