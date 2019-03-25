@@ -1,0 +1,16 @@
+INSERT INTO user(`name`) VALUES ( UUID());
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
+INSERT INTO user(`name`) SELECT UUID() FROM user;
