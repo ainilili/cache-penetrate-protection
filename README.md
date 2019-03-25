@@ -34,3 +34,7 @@ if(o != null){
 这里不过多阐述，详情可以百度百科一波：[https://baike.baidu.com/item/bloom%20filter/6630926?fr=aladdin](https://baike.baidu.com/item/bloom%20filter/6630926?fr=aladdin)
 
 演示中使用``guava``自带的``Bloom Filter``!
+# 运行演示
+ - 1. 导入项目到IDE
+ - 2. ``org.smallnico.demo.Application``入口启动项目
+ - 3. ``http://localhost:8383/swagger-ui.html#/demo-controller``运行演示接口
