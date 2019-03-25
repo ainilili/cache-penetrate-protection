@@ -91,7 +91,10 @@ public class CacheComponent implements Map<Integer, User>, SmartLifecycle{
     public Set<Entry<Integer, User>> entrySet() {
         return cache.entrySet();
     }
-
+    
+    /**
+     * 初始化缓存及初始化BloomFilter
+     */
     @Override
     public void start() {
         List<User> users = userMapper.selectList(null);
